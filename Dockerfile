@@ -5,8 +5,11 @@ FROM node:latest
 WORKDIR /app
 # all the following commands after this line will be excuted in /app folder of container
 
+# use cache if possible, to save downloads
+ADD package*.json ./
+RUN npm install
+
 # add everything in the current path of host to the /app folder
 ADD . .
 
-RUN npm install
 CMD node index.js
