@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:12.18.4-alpine
 
 # if /app folder exists in container, then use it
 # if not, create it firstly and then use it
