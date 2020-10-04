@@ -1,0 +1,7 @@
+# unnecessary for building images
+node_modules
+.git
+.gitignore
+
+# unncessary to add the following to images to run application
+Dockerfile
