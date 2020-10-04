@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:lts-alpine
 
 # if /app folder exists in container, then use it
 # if not, create it firstly and then use it
